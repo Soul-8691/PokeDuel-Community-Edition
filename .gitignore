@@ -216,3 +216,6 @@ scripts/probe_*.py
 *_sample*
 *.gba
 *.bak
+images/*
+!images/.gitkeep
+*.sav

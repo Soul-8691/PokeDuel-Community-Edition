@@ -1,6 +1,6 @@
 [General]
 ApplicationVersion = '''0.5.6.1'''
-FreeSpaceSearch = '''000200'''
+FreeSpaceSearch = '''17AC40'''
 FreeSpaceBuffer = '''040'''
 NextExportID = '''0'''
 ShowRawIVByteForTrainer = True
@@ -93,7 +93,7 @@ DefaultHash = '''C4BD7B07'''
 [[NamedAnchors]]
 Name = '''data.abilities.names'''
 Address = 0x10DDC20
-Format = '''[name""13]2'''
+Format = '''[name""17]255'''
 DefaultHash = '''691941BB'''
 
 [[NamedAnchors]]
@@ -111,7 +111,7 @@ DefaultHash = '''0E9784EA'''
 [[NamedAnchors]]
 Name = '''data.items.stats'''
 Address = 0x11337C0
-Format = '''[name""13 unused. index: price: holdeffect.holdeffects param. description<""> keyitemvalue. bagkeyitem. pocket.pocketid type.|s=pocket(0=itemtype|1=itemtype|2=itemtype|4=itemtype|5=itemtype) fieldeffect<> battleusage:: battleeffect<> battleextra::]30'''
+Format = '''[name""13 unused. index: price: holdeffect.holdeffects param. description<""> keyitemvalue. bagkeyitem. pocket.pocketid type.|s=pocket(0=itemtype|1=itemtype|2=itemtype|4=itemtype|5=itemtype) fieldeffect<> battleusage:: battleeffect<> battleextra::]779'''
 DefaultHash = '''07F16966'''
 
 [[NamedAnchors]]
@@ -2819,6 +2819,12 @@ Name = '''graphics.overworld.palettes2'''
 Address = 0x3A5340
 Format = '''[pal<`ucp4`> id:|h unused:]2'''
 DefaultHash = '''74F01E53'''
+
+[[NamedAnchors]]
+Name = '''graphics.overworld.sprites'''
+Address = 0x801C80
+Format = '''[data<[starterbytes:|h paletteid:|h secondid:|h length: width: height: info.|t|palSlot::|shadowSize:|inanimate.|reflectionPalette. footprint.owfootprints unused: distribution<> sizedraw<> animation<> sprites<`osl`> ramstore<>]1>]229'''
+DefaultHash = '''7BDF419E'''
 
 [[NamedAnchors]]
 Name = '''graphics.overworld.sprites2'''
