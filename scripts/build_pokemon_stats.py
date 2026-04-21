@@ -233,11 +233,11 @@ def main() -> None:
 
     for slug, row in dex.items():
         types = row["types"]
-        if len(types) == 1:
-            by_type[types[0]].append(slug)
+        for type_index in range(len(types)):
+            by_type[types[type_index]].append(slug)
         eggs = row["eggGroups"]
-        if len(eggs) == 1:
-            by_egg[eggs[0]].append(slug)
+        for egg_index in range(len(eggs)):
+            by_egg[eggs[egg_index]].append(slug)
         for hab in hab_mem.get(slug, ()):
             by_hab[hab].append(slug)
 
